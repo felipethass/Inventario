@@ -1,0 +1,21 @@
+{
+  "name": "Inventario3",
+  "description": "paquetes del frontend para el proyecto inventario3",
+  "main": "",
+  "license": "MIT",
+  "homepage": "localhost:8000",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Felipe Delgado"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-material-design"; "^0.5.9"
+  }
+}
