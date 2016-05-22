@@ -1,3 +1,4 @@
 ## Proyecto Inventario3
 
-Aplicacion desarolada para un proyecto universitario
+Aplicacion desarollada para un proyecto universitario
+Entregado disque el viernes
