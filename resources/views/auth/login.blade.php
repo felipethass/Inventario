@@ -49,7 +49,7 @@
 						<div class="col-md-6 col-md-offset-4">
 							<button type="submit" class="btn btn-primary">Ingresar</button>
 							
-							<a href="(!! url('password/email')!!)">¿Olvidaste tu cntraseña?</a>
+							
 							
 						</div>
 					</div>

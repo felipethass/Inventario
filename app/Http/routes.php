@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+
+Route::get('/', 'HomeController@index');
+
+resource('tipoproductos','TipoProductoController');
+
+
+
+resource('productos','ProductoController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+

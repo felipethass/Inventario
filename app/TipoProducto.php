@@ -6,4 +6,6 @@ class TipoProducto extends Model {
 
 	protected $table= 'tipo_productos';
 
+	protected $fillable = ['codigotipo','nombretipo', 'cantidad'];
+
 }
