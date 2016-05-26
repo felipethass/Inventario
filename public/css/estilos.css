@@ -19,6 +19,11 @@ body{
   background-image: url('logo.png'); 
   background-color:#fff; 
 }
+.tableimg2{
+  background-image: url('logo2.png'); 
+  background-repeat: no-repeat;
+  background-position: right;
+}
 /*.nav{
   color : black;
   background: #445cc1;
@@ -92,9 +97,18 @@ a {
   color:black;
   
 }
+.black{
+  background-color:black;
+  font-family:Georgia;
+  color:black;
+  
+}
 .famarillo{
   background-color: #efc62f;
 }
-icon{
+.contenedor2{
+  height: 400px;
+}
+.icon{
   min-width: 50px;
 }

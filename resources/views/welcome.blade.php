@@ -8,8 +8,54 @@
 
 
 
-@endsection
+<div class="container tableimg contenedor2 whit">
+	<div class="content colorbl">
+		<h1 align="center"> BIENVENIDO</h1>
+		<h1 align="center"> </h1>
+		<h1 align="center"> </h1>
+		<h1 align="center"> Este es el inventario de Horus Bar</h1>
 
+		<div class="" align="center">
+		<button class= "btn blue"  data-toggle="modal" data-target="#listatipos">
+			Ver Manual de Usuario
+		</button>
+		</div>
+		<div class="" align="center">
+		<button class= "btn blue"  data-toggle="modal" data-target="#listatipos">
+			Contacto y licencia
+		</button>
+		</div>
+		<div class="modal fade" id="listatipos" tabindex="-1" role= "dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--BOTON CERRAR -->
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+
+						<!--CONTENIDO -->
+						<h4>Lista de tipos</h4>
+					</div>
+					<div class="modal-body">
+
+						CONTENIDO
+					</div>
+					
+					<div class="modal-footer">
+						<!--BOTON CERRAR -->
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+@endsection
 
 
 
@@ -60,4 +106,4 @@
 			</div>
 		</div>
 	</body> -->
-</html>
+	</html>

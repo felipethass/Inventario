@@ -5,9 +5,9 @@
 	<h1 align="center">
 		Lista de tipos de producto</h1>
 
-		<div class="form-group ">
+		<div class="form-group container ">
 
-			<table class="table table-bordered table-striper" >
+			<table class="table table-bordered table-striper tableimg colorbl" >
 
 				<thead>
 					<tr>
@@ -34,12 +34,14 @@
 		</table>
 
 		<div class="form-group ", role"group" >
+		<div class="col-md-4 blue">
 
 			{!! Form::open(['route' => 'tipoproductos.create','method' => 'get']) !!}
-
-			{!! Form::button('Crear Producto', ['type'=> 'submit', 'class'=>'btn  blue ']) !!}
+			
+			{!! Form::button('Crear Tipo de Producto', ['type'=> 'submit', 'class'=>'btn  blue ']) !!}<span class="glyphicon glyphicon-folder-open"> </span>
 
 			{!! Form::close() !!}
+			</div>
 
 
 
