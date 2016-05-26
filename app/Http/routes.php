@@ -17,7 +17,6 @@ Route::get('/', 'HomeController@index');
 
 resource('tipoproductos','TipoProductoController');
 
-resource('vender','VenderController');
 
 resource('productos','ProductoController');
 
@@ -25,10 +24,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+Route::get('productos/destroy/{codigoproducto}','ProductoController@destroy');
 
-Route::get('productos/{codigoproducto}/destroy',['productos'=>'VenderController@destroy',
-	'as'=> 'producto.vender'
-	]);
 
 
 

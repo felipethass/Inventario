@@ -95,4 +95,6 @@ a {
 .famarillo{
   background-color: #efc62f;
 }
-
+icon{
+  min-width: 50px;
+}

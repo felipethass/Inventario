@@ -13,10 +13,13 @@ class VenderController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($codigoproducto)
 	{
-		$producto = Producto::lists('codigoproducto');
-		return view('producto.venderprod',compact('producto'));	
+		public function destroy($codigoproducto)
+	{
+		dd("Eliminado", $codigoproducto);
+		return redirect('productos');
+	}	
 	}
 
 	/**

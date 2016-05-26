@@ -1,4 +1,4 @@
-<div class="col-sn-6">
+<div class="col-sn-6 container">
 	<div class="form-group">
 		{!! Form::text('codigoproducto',null,['class'=>'form-control floating-label', 'placeholder'=> 'Codigo del producto:','required']) !!}
 		@if ($errors->has('codigoproducto'))
@@ -17,7 +17,14 @@
 	</div>
 	@if ($errors->has('codigotipo'))
 	<p class="text-danger"> {{ $errors->first('codigotipo') }}</p>
+
 	@endif
+
+	<div class="form-group col-md-2" align="center">
+	<span class="glyphicon glyphicon-floppy-disk icon" aria-hidden="true">
+		{!! Form::button('Guardar',['type'=> 'submit', 'class'=>'blue btn ']) !!}</span>
+	</div>
+	
 
 
 

@@ -3,7 +3,6 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateProductoRequest;
-use App\Http\Requests\VenderRequest;
 
 use Illuminate\Http\Request;
 use App\Producto;
@@ -24,7 +23,7 @@ class ProductoController extends Controller {
 	{
 		
 		
-		$producto = Producto::search($request->codigoproducto)->orderBy('id','DESC')->paginate(5);
+		$producto = Producto::search($request->codigoproducto)->orderBy('id','DESC')->paginate();
 
 		return view ('producto.verproductos', array('producto' => $producto ), compact('producto'));
 	}
@@ -55,6 +54,11 @@ class ProductoController extends Controller {
 		
 		$producto = Producto::create($request->all());
 		return redirect('productos');
+	}
+
+	public function destroy($codigoproducto)
+	{
+		dd("Eliminado", $codigoproducto);
 	}
 
 	/**
@@ -97,11 +101,5 @@ class ProductoController extends Controller {
 	 * @return Response
 	 */
 
-	
-
-	public function destroy($codigoproducto)
-	{
-		dd("Eliminado",$codigoproducto);
-	}
 
 }
