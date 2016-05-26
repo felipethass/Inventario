@@ -2,31 +2,21 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\CreateProductoRequest;
-use App\Http\Requests\VenderRequest;
 
 use Illuminate\Http\Request;
 use App\Producto;
-use App\TipoProducto;
 
-class ProductoController extends Controller {
+class VenderController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
-
 	 */
-
-	
-
-	public function index(Request $request)
+	public function index()
 	{
-		
-		
-		$producto = Producto::search($request->codigoproducto)->orderBy('id','DESC')->paginate(5);
-
-		return view ('producto.verproductos', array('producto' => $producto ), compact('producto'));
+		$producto = Producto::lists('codigoproducto');
+		return view('producto.venderprod',compact('producto'));	
 	}
 
 	/**
@@ -35,26 +25,18 @@ class ProductoController extends Controller {
 	 * @return Response
 	 */
 	public function create()
-	{	
-		$tipoproductos = TipoProducto::lists('id','nombretipo');
-
-		$productos = Producto::all(); 
-		
-		return view('producto.crearprod',compact('productos'),compact('tipoproductos'));
+	{
+		//
 	}
-
-	
 
 	/**
 	 * Store a newly created resource in storage.
 	 *
 	 * @return Response
 	 */
-	public function store(CreateProductoRequest $request)
+	public function store()
 	{
-		
-		$producto = Producto::create($request->all());
-		return redirect('productos');
+		//
 	}
 
 	/**
@@ -96,9 +78,6 @@ class ProductoController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-
-	
-
 	public function destroy($codigoproducto)
 	{
 		dd("Eliminado",$codigoproducto);

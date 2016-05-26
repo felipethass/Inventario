@@ -71,10 +71,10 @@
 					</ul>
 					@else
 					<ul class="nav navbar-nav navbar-left col-md-6">
-					<a class="navbar-brand col-md-4-offset-2" href="productos">Ver Lista de Productos</a>
+					<a class="navbar-brand col-md-4-offset-2" href="/productos">Ver Lista de Productos</a>
 							<div class="col-md-2-offset-2"></div>
 							<div class="col-md-2"></div>
-						<a class="navbar-brand col-md-4-offset-2" href="tipoproductos ">Ver Lista de Tipos</a>
+						<a class="navbar-brand col-md-4-offset-2" href="/tipoproductos ">Ver Lista de Tipos</a>
 						<div class="col-md-2-offset-2"></div>
 							
 							

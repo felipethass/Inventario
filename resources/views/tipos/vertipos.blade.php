@@ -43,12 +43,7 @@
 
 
 
-			{!! Form::open(['route'=>['tipoproductos.destroy',$tipoproducto->codigotipo], 'method'=>'DELETE']) !!}
-
-
-			{!! Form::button('Vender Producto', ['type'=> 'submit', 'class'=>'btn btn-danger blue ']) !!}
-
-			{!! Form::close() !!}
+			
 		</div>
 	</div>	
 
