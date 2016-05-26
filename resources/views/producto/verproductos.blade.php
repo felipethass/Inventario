@@ -6,7 +6,7 @@
 	
 		<h1 align="center">Lista de productos</h1>
 
-<!--BUSCADOR -->
+		<!--BUSCADOR -->
 		{!! Form::open([ 'route'=> 'productos.index', 'method'=>'GET', 'class'=>' pull-right ']) !!}
 		<div class="input-group input-group-lg colorbl">
 			<span class="glyphicon glyphicon-search input-group-addon 

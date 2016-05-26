@@ -20,6 +20,7 @@
 
 	@endif
 
+
 	<div class="form-group col-md-2" align="center">
 	<span class="glyphicon glyphicon-floppy-disk icon" aria-hidden="true">
 		{!! Form::button('Guardar',['type'=> 'submit', 'class'=>'blue btn ']) !!}</span>

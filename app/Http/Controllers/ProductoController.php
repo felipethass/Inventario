@@ -36,7 +36,7 @@ class ProductoController extends Controller {
 	 */
 	public function create()
 	{	
-		$tipoproductos = TipoProducto::lists('id','nombretipo');
+		$tipoproductos = TipoProducto::all();
 
 		$productos = Producto::all(); 
 		
@@ -64,9 +64,7 @@ class ProductoController extends Controller {
 		$productos = Producto::search($codigoproducto);
         $productos->delete($codigoproducto);
 
-        Session::flash('message','Vendido');
-
-        return redirect('productos')->whit('message','VENDIDO');
+        return redirect('productos');
 
 		
 	}
