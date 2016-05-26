@@ -7,6 +7,7 @@ use App\Http\Requests\CreateProductoRequest;
 use Illuminate\Http\Request;
 use App\Producto;
 use App\TipoProducto;
+use Session;
 
 class ProductoController extends Controller {
 
@@ -58,7 +59,16 @@ class ProductoController extends Controller {
 
 	public function destroy($codigoproducto)
 	{
-		dd("Eliminado", $codigoproducto);
+		//Producto::destroy($codigoproducto);
+		
+		$productos = Producto::search($codigoproducto);
+        $productos->delete($codigoproducto);
+
+        Session::flash('message','Vendido');
+
+        return redirect('productos')->whit('message','VENDIDO');
+
+		
 	}
 
 	/**
