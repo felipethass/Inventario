@@ -8,7 +8,6 @@
 	<link rel="shortcut icon" href="logonav.ico">
 
 	
-
 	<!-- Fonts -->
 	
 	{!! Html::style('bower_components/bootstrap/dist/css/bootstrap.min.css') !!}
